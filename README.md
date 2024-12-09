@@ -3,6 +3,7 @@
 # Three.js Shader Hackathon Project
 
 **DEMO**
+
 ![Demo](/assets/grafkom_demo.gif)
 
 **Objective:**  

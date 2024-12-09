@@ -25,7 +25,7 @@ This project demonstrates custom vertex and fragment shaders using Three.js in a
 
 ## 🛠️ **Instruction**
 
-1. **Project Setup:**
+1. 💻 **Project Setup:**
    - Clone this repository into a GitHub Codespace.
    - Install all required dependencies (e.g., `npm install`) and run the development server.
    - Ensure that the project runs correctly and can be previewed directly within the Codespace environment.

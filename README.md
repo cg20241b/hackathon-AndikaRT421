@@ -25,7 +25,7 @@ This project demonstrates custom vertex and fragment shaders using Three.js in a
 
 ## 🛠️ **Instruction**
 
-1. 💻 **Project Setup:**
+### 💻 **Project Setup:**
    - Clone this repository into a GitHub Codespace.
    - Install all required dependencies (e.g., `npm install`) and run the development server.
    - Ensure that the project runs correctly and can be previewed directly within the Codespace environment.
@@ -37,7 +37,7 @@ npm install
 http-server
 ```
 
-2. 🔍 **Scene Composition:**
+### 🔍 **Scene Composition:**
    - Determine the last alphabet character of your name. For example, if your name is "Ardi," the last alphabet is "i."
    - Determine the last digit of your student ID. For example, if your student ID is `123456`, the last digit is `6`.
    - Create 3D text meshes representing:
@@ -48,7 +48,7 @@ http-server
 > - Name: Andika => Last Alphabet: `A`
 > - NRP: 5025221022 => Last Digit: `2`
 
-3. 🎨 **Color Specification:**
+### 🎨 **Color Specification:**
    - Assign the alphabet mesh your favorite color from Assignment 1.
    - Assign the digit mesh the complementary color of the alphabet’s color.
 
@@ -56,7 +56,7 @@ http-server
 > - Alphabet Color: Old Gold (#D0B341) or RGB(208, 179, 65)
 > - Digit Color: Warm Blue (#415ED0) or RGB(65, 94, 208)
 
-4. 🧊 **Central Cube (Light Source):**
+### 🧊 **Central Cube (Light Source):**
    - Add a small cube at the center of the scene, between the alphabet and the digit meshes.
    - The cube should appear to "glow" white, serving as a point light source.
    - Use a dedicated `ShaderMaterial` that simulates light emission.
@@ -84,7 +84,7 @@ scene.add(cube);
 pointLight.position.copy(cube.position);
 ```
 
-5. 🔠**Shader Materials for Characters:**
+### 🔠**Shader Materials for Characters:**
    Two distinct `ShaderMaterial` instances must be created—one for the alphabet and one for the digit—featuring custom shading models influenced by the cube’s position as a point light source.
 
    - 🅰️**Alphabet ShaderMaterial:**
@@ -197,7 +197,7 @@ const createDigitMaterial = (color) => {
 > - The `specular` calculation for the **plastic** material uses a lower exponent (e.g., 10.0) for a broader highlight.
 > - The `specular` calculation for the **metal** material uses a higher exponent (e.g., 100.0) for a tighter, more reflective highlight.
 
-6. 🕹️ **Interactivity:**
+### 🕹️ **Interactivity:**
    - 🎲 **Cube Movement:**  
      - Press `W` to move the cube upward (increase Y coordinate).
      - Press `S` to move the cube downward (decrease Y coordinate).
@@ -225,7 +225,7 @@ switch (event.key) {
 });
 ```
 
-7. 🎛️ **Version Control & Submission:**
+### 🎛️ **Version Control & Submission:**
    - Commit changes regularly to this repository.
    - Push the final version before the submission deadline.
 

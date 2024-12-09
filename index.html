@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interactive Three.js Scene</title>
+  <title>A2 = Andika Rahman Teja</title>
   <style>
     body {
       margin: 0;
@@ -52,7 +52,8 @@
       }`,
       fragmentShader: `uniform float time;
       void main() {
-        float intensity = abs(sin(time)) * 0.4 + 0.4;
+        float speed = abs(sin(time * 0.01)) * 2.5 + 1.0;
+        float intensity = abs(sin(time * speed)) * 0.4 + 0.4;
         gl_FragColor = vec4(vec3(1.0) * intensity, 1.0);
       }`,
     });
